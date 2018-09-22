@@ -7,5 +7,10 @@ This user likely doesn't have a computer at home and is often unfamiliar with ho
 
 This user would benefit from using a password manager.  They would only then have to remember one password or passphrase in order to access all of their accounts. A password manager could also benefit the user by helping them create more secure passwords that exceed the minimum site requirements. They should also keep their contact information current on websites, especially when they get a new phone number.  This user should also use a privacy screen and use the ‘hide my screen’ feature, requiring a PIN to resume use, when leaving their PC unattended.  This user would also benefit from a general education of how the Internet works and why the above suggestions are important for both ease of use and overall personal security.
 
-
 **Part 2**
+
+I started using a password manager last week, since learning more about computer security.  I have a 22 character passphrase for my password manager including uppercase and lowercase letters, numbers, and symbols.  I also use the password manager to create more secure, randomized passwords for other sites that I use.  
+
+Another thing I have implemented is a Virtual Private Network (VPN) subscription, purchased with a pre-paid credit card. I heavily researched my choice of VPN, taking into account the jurisdiction area of the company, their record keeping practices, and the tracking of payment methods along with ease of use. While I rarely use 2-factor authentication, I do receive notifications for site logins from unfamiliar computers. 
+
+I have learned much from the library computer users that I help as part of my job.  I keep my contact information up to date on sites, do not use the same password for multiple sites, and do not share these passwords with others or write them down. 
