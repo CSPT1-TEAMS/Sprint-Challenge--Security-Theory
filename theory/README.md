@@ -2,6 +2,19 @@
 
 ## Regular Expressions
 
+**all answers**
+*antelope*
+/antelopes? rocks? out/g
+*goat / moat*
+/[^b]oat/g 
+*YYYY-MM-DD*
+/(\d{1,4})-(\d{1,2})-(\d{1,2})/g
+*VT-100 row/col*
+/(\\e)\[(\d{1,});(\d{1,})f/
+*VT-100 bold*
+/\\e\[1/
+
+
 Find regexes that match the following. (e.g. find a single regex that matches
 both `antelope` and `antelopes`.)
 
@@ -10,6 +23,8 @@ both `antelope` and `antelopes`.)
     antelope rocks out
     
     antelopes rock out
+
+** /antelopes? rocks? out/g **
 
 * Regex that matches either of:
 
@@ -20,6 +35,8 @@ both `antelope` and `antelopes`.)
   but not:
 
     boat
+
+** /[^b]oat/g **
 
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
@@ -33,6 +50,7 @@ both `antelope` and `antelopes`.)
   
   812-2-10
 
+** /(\d{1,4})-(\d{1,2})-(\d{1,2})/g **
 ## State Machines
 
 > A useful tool for drawing state machines is [Evan's FSM
@@ -55,11 +73,11 @@ both `antelope` and `antelopes`.)
   for commands to change its behavior. For example:
 
       ESC[12;45f
-
+  ** /(\\e)\[(\d{1,});(\d{1,})f/ **
   moves the cursor to line 12, column 45.
 
       ESC[1m
-
+  ** /\\e\[1/
   changes the font to bold.
 
   * Come up with regexes for the two above sequences. The one to set the
