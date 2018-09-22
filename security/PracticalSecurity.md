@@ -1,0 +1,3 @@
+In order to protect myself the simplicist thing i did was change my password to something that has at least 10 characters, I also made up words for my password. I have a real problem with remembering my password, I can always store my passwords in something at home or use a service that charges to keep my passwords safe (but that might be a risk if they are somehow hacked). 
+
+I have also implemented two factor authentication for some of my personal accounts. 
