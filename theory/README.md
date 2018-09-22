@@ -5,6 +5,8 @@
 Find regexes that match the following. (e.g. find a single regex that matches
 both `antelope` and `antelopes`.)
 
+## CODE FOR ANTELOPE(S): ```/antelopes?/g```
+
 * Single regex that matches either of these:
 
     antelope rocks out
@@ -21,6 +23,9 @@ both `antelope` and `antelopes`.)
 
     boat
 
+  ## CODE FOR ANTELOPES ROCK OUT: ```/antelopes?\srocks?\sout/g```
+  ## CODE FOR GOAT/ MOAT: ```/[gm]oat/g```
+
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
   is correct (e.g 3333-33-33 can match).
@@ -32,6 +37,10 @@ both `antelope` and `antelopes`.)
   1999-01-20
   
   812-2-10
+  
+  ## CODE FOR DATES: ```/(\d{1,4}[0-9])[\s-]?(0?[1-9]|[12][0-9]|3[01])[\s-]?(\d{2})/g``` might work, some troubles, OH, DOESNT NEED TO VERIFY CORRECT DATE BLAH
+
+  ## NEW CODE FOR DATES ```/(\d{4})[\s-]?(\d{2})[\s-]?(\d{2})/g```
 
 ## State Machines
 
@@ -42,12 +51,16 @@ both `antelope` and `antelopes`.)
 
       ab*c+d?[ef]
 
+      ## GO TO ```STATEMACHINE REGEX.png``` TO SEE SOLUTION
+
   Remember the ε transition can be used to move between states without
   consuming input. 
 
 * A lion can be sleeping, eating, hunting, or preening. Draw a state
   machine diagram for the lion and label the transition events that
   cause state transitions.
+
+  ## GO TO ```LIONSTATEMACHINE.png``` TO SEE SOLUTION
 
 * The VT-100 terminal (console) outputs text to the screen as it
   receives it over the wire. One exception is that when it receives an
@@ -69,6 +82,8 @@ both `antelope` and `antelopes`.)
 
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
+
+  ## GO TO ```VT-100statemachine.png```
 
 > If you're curious, [here are all the VT-100 escape
 > sequences](http://ascii-table.com/ansi-escape-sequences-vt-100.php).
