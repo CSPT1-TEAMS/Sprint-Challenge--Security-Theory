@@ -60,10 +60,13 @@ both `antelope` and `antelopes`.)
   for commands to change its behavior. For example:
 
       ESC[12;45f
+  /ESC\[\d+;\d+f/g
 
   moves the cursor to line 12, column 45.
 
       ESC[1m
+
+  /ESC\[1m/g
 
   changes the font to bold.
 
@@ -75,6 +78,7 @@ both `antelope` and `antelopes`.)
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
 
+not sure how to do this
 > If you're curious, [here are all the VT-100 escape
 > sequences](http://ascii-table.com/ansi-escape-sequences-vt-100.php).
 > More common these days is a superset of VT-100 called [ANSI escape
