@@ -10,6 +10,8 @@ both `antelope` and `antelopes`.)
     antelope rocks out
     
     antelopes rock out
+  
+/antelopes? rocks? out/g
 
 * Regex that matches either of:
 
@@ -20,6 +22,7 @@ both `antelope` and `antelopes`.)
   but not:
 
     boat
+/[gm]oat/g
 
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
@@ -32,6 +35,8 @@ both `antelope` and `antelopes`.)
   1999-01-20
   
   812-2-10
+
+/\d{2,4}-\d{1,2}-\d{1,2}/g
 
 ## State Machines
 
@@ -55,10 +60,13 @@ both `antelope` and `antelopes`.)
   for commands to change its behavior. For example:
 
       ESC[12;45f
+  /ESC\[\d+;\d+f/g
 
   moves the cursor to line 12, column 45.
 
       ESC[1m
+
+  /ESC\[1m/g
 
   changes the font to bold.
 
@@ -70,6 +78,7 @@ both `antelope` and `antelopes`.)
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
 
+not sure how to do this
 > If you're curious, [here are all the VT-100 escape
 > sequences](http://ascii-table.com/ansi-escape-sequences-vt-100.php).
 > More common these days is a superset of VT-100 called [ANSI escape
